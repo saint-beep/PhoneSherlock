@@ -6,7 +6,7 @@ from playwright.sync_api import sync_playwright
 os.system('cls')
 
 phone_number = input("Enter phone number(prefix + number): ")
-nr = phonenumbers.parse(phone_number, "RO")
+nr = phonenumbers.parse(phone_number)
 
 print("Valid:", phonenumbers.is_valid_number(nr))
 print("Possible:", phonenumbers.is_possible_number(nr))
